@@ -2,7 +2,7 @@
 /* eslint-disable no-alert */
 /* eslint-disable default-case */
 
-const ws = new WebSocket('https://ahj-homewowrk-8.herokuapp.com/');
+const ws = new WebSocket('ws://ahj-homewowrk-8.herokuapp.com/ws');
 
 const modal = document.getElementById('modal');
 const name = document.getElementById('name');
