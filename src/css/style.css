@@ -1,0 +1,142 @@
+body {
+  background-color: #292F36;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #292F36;
+}
+
+h1 {
+  font-size: 40px;
+  color: #F5F5F5;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  box-sizing: border-box;
+  width: 500px;
+  height: 220px;
+  padding: 20px;
+  background-color: #F5F5F5;
+  left: 60px;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-name {
+  margin-bottom: 15px;
+}
+
+#name {
+  height: 30px;
+  width: 400px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.button {
+  width: 170px;
+  height: 44px;
+  border: 0;
+  color: #F5F5F5;
+  background-color: #4ECDC4;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #FE5F55;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#members-list {
+  width: 300px;
+  background-color: #F5F5F5;
+  padding: 18px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+#members-online {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.member {
+  margin-bottom: 10px;
+}
+
+.member:last-child {
+  margin-bottom: 0;
+}
+
+.member::before {
+  content: '';
+  display: inline-block;
+  margin-right: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #4ECDC4;
+}
+
+.member-me::before {
+  background-color: #FE5F55;
+}
+
+#messages {
+  width: 700px;
+  background-color: #F5F5F5;
+  padding: 22px;
+  box-sizing: border-box;
+}
+
+.message {
+  margin-bottom: 14px;
+  box-sizing: border-box;
+}
+
+.message-text {
+  display: inline-block;
+  background-color: #c6efec;
+  padding: 12px;
+}
+
+.your-message {
+  text-align: right;
+}
+
+.your-message > .message-text {
+  background-color: #fea7a1;
+}
+
+.message-info {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+#messages-wrapper {
+  overflow: scroll;
+  max-height: 500px;
+}
+
+#typing-area {
+  margin-top: 15px;
+  min-width: 650px;
+  max-width: 650px;
+}
